@@ -1,0 +1,16 @@
+{
+  "name": "ExpressGateway",
+  "description": "Express Gateway Instance Bootstraped from Command Line",
+  "repository": {},
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "consul": "^0.36.0",
+    "express-gateway": "^1.16.10"
+  }
+}

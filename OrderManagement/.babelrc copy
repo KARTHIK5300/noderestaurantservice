@@ -1,0 +1,9 @@
+{
+    //set environment, reduce into lower version of cde
+    "presets": [
+        "@babel/preset-env"
+    ],
+    //actual line maping to old code
+    "sourceMaps": "inline",         
+    "retainLines": true
+}
