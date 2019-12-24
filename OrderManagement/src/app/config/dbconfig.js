@@ -1,7 +1,9 @@
 // import config from './index';
 const config = require('./index');
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/OrderManagement", {
+const env = require('dotenv/config');
+//MONGO_URL     "mongodb://localhost/OrderManagement"
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true
 });
 // mongoose.connect(config.MongoUrl, {

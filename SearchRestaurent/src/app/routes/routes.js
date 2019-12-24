@@ -1,7 +1,7 @@
 const express = require('express');
 const validate = require('express-validation')
-const restaurent = require('../brand/restaurent');
-const getAllRestaturent = require('../brand/getAllRestaurent');
+const restaurent = require('../controllers/restaurent');
+const getAllRestaturent = require('../controllers/getAllRestaurent');
 const restaurentModel = require('../model/restaurant');
 
 const validation = require('../validation/restaurent');

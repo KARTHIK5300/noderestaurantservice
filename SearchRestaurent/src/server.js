@@ -1,7 +1,8 @@
 const app = require('./app');
-const consule = require('./consul');
+const env = require('dotenv/config');
+//const consule = require('./consul');
 
-app.listen(4000 , (err) => {
+app.listen(process.env.PORT || '4000' , (err) => {
     if(err) {
         consolr.log('error' + err);
     } else {

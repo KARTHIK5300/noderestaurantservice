@@ -1,5 +1,5 @@
 var rp = require("request-promise");
-const consule = require('../../consul');
+// const consule = require('../../consul');
 async function orderService(req, res) {
     const city = req.query.city;
     const datePrams = req.query.date
@@ -27,7 +27,8 @@ async function orderService(req, res) {
     };
     var options = {
       method: "post",
-      uri: "http://localhost:3000/vieworder",
+       uri: "http://localhost:3000/vieworder",
+       // uri: currentService().known_order_instances[0]+"/vieworder",
       body: {
        // city:totalResult.restaurents,
          date: datePrams,

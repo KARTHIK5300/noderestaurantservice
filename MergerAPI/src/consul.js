@@ -72,7 +72,7 @@ orderWatcher.on('change', data => {
 });
 
 function currentService(){
-    return (known_search_instances , known_order_instances)
+    return {known_search_instances , known_order_instances}
 }
 
 module.exports = currentService;

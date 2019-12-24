@@ -1,14 +1,24 @@
 const orderSchema = require("../model/order-model");
 function placeOrder(req, res) {
+  const {
+    name,
+    type,
+    quantity,
+    price,
+    orderId,
+    city,
+    restaurentId
+  } = req.body;
   orderSchema.create(
     {
-        name: "dadsfdsff",
-        type: "Indian food",
-        quantity: 9,
-        price: 23987,
-        orderId: 3,
-        city: "coimbatore",
-        restaurentId: "5df5a6faf59998720c390e27"
+
+      name,
+      type,
+      quantity,
+      price,
+      orderId,
+      city,
+      restaurentId
     },
     (error, placeOrder) => {
       if (error) throw Error(error.message);
